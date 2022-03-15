@@ -7,8 +7,8 @@
  {{ errors }}
     </pre>
 
-    <button @click="triggerErreur()">erreur</button>
-    <button @click="triggerValue()">valeur</button>
+    <button type="button" @click="triggerErreur()">erreur</button>
+    <button type="button" @click="triggerValue()">valeur</button>
   </form>
 </template>
 
