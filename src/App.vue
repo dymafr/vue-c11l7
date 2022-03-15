@@ -32,8 +32,12 @@ const {
   toFieldValidator(z.string().min(5, { message: 'Trop court !' }))
 );
 
-function tirggerErreur {
-  setFieldError('username', 'oops')
+function triggerErreur() {
+  setFieldError('username', 'oops');
+}
+
+function triggerValue() {
+  setFieldError('username', 'test');
 }
 </script>
 
