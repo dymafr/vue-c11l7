@@ -6,6 +6,7 @@
     <pre>
  {{ errors }}
     </pre>
+
     <button @click="triggerErreur()">erreur</button>
     <button @click="triggerValue()">valeur</button>
   </form>
@@ -36,11 +37,11 @@ const {
 );
 
 function triggerErreur() {
-  setFieldError('username', 'oops');
+  setErrors('oops');
 }
 
 function triggerValue() {
-  setFieldValue('username', 'test');
+  setValue('test');
 }
 </script>
 
