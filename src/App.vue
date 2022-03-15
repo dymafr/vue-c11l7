@@ -3,6 +3,9 @@
     <div>
       <input v-model="usernameValue" type="text" placeholder="Prénom" />
     </div>
+    <pre>
+ {{ errors }}
+    </pre>
     <button @click="triggerErreur()">erreur</button>
     <button @click="triggerValue()">valeur</button>
   </form>
@@ -37,7 +40,7 @@ function triggerErreur() {
 }
 
 function triggerValue() {
-  setFieldError('username', 'test');
+  setFieldValue('username', 'test');
 }
 </script>
 
